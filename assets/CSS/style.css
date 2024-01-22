@@ -1,0 +1,63 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 80%;
+  padding-top: 20px;
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: start;
+}
+/* 
+d-flex{
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: start;
+} */
+
+.card{
+  position:relative;
+  width: 33%;
+  padding: 0 5px 0 5px;
+}
+
+.hovered{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card:hover .hovered{
+  display: block;
+  padding: 0 5px 0 5px;
+}
+
+.marca{
+  font-size: 1.2rem;
+  color:#8e8c86 ;
+}
+
+.description{
+  font-size: 2rem;
+  color: black;
+}
+
+.actual-price{
+  color: red;
+}
+
+.previous-price{
+  text-decoration: line-through;
+  color: #606760;
+}
